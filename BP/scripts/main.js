@@ -5,9 +5,14 @@ import * as ui from "@minecraft/server-ui"
 
 const world = server.world
 
+
 world.afterEvents.playerBreakBlock.subscribe(e => {
     console.warn("Block destory");
 });
+
+// admin command 
+
+
 
 // admin menu
 world.afterEvents.itemUse.subscribe(e => {
@@ -20,7 +25,6 @@ world.afterEvents.itemUse.subscribe(e => {
             .button("Creative")
             .button("Survival")
             .show(e.source)
-
         from1.then(ev => {
             let selection = ev.selection
             if (selection == 0) {
