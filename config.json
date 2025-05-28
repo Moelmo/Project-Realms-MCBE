@@ -1,0 +1,47 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Testing",
+	"namespace": "bridge",
+	"authors": [
+		"Moelmo"
+	],
+	"targetVersion": "1.21.80",
+	"description": "",
+	"experimentalGameplay": {
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"experimentalCreatorCameraFeatures": true,
+		"enableGameTestFramework": true,
+		"dataDrivenJigsawStructures": true,
+		"customComponentsV2": true,
+		"renderDragonFeatures": true,
+		"educationEdition": true
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Testing"
+				}
+			]
+		]
+	}
+}

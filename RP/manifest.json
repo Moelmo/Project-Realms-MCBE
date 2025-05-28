@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Moelmo"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.46"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			80
+		],
+		"uuid": "4c253693-58ec-4068-b44d-2bae10cad9eb",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "29341862-1fd6-4f61-8ebc-814243575fc8",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "0278de3d-3915-46fe-8f5a-ac4efd053d62",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
