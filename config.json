@@ -43,5 +43,9 @@
 				}
 			]
 		]
+	},
+	"bridge": {
+		"darkTheme": "bridge.default.dark",
+		"lightTheme": "chikorita_lover.coffee.theme"
 	}
 }

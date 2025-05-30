@@ -12,7 +12,14 @@ world.afterEvents.playerBreakBlock.subscribe(e => {
 
 // admin command 
 
+world.beforeEvents.chatSend.subscribe((chatmsg) => {
+    const player = chatmsg.sender
+    const msg = chatmsg.message
 
+    if (msg == "!tes") {
+        player.runCommand("say testing")
+    }
+});
 
 // admin menu
 world.afterEvents.itemUse.subscribe(e => {
